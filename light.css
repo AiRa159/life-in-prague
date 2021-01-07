@@ -1,0 +1,204 @@
+body {
+    width: 70%;
+    margin: 0 auto;
+    background-image: url(/blog/site_pictures/light_back.png);
+    background-size: cover;
+    font-family: URW Chancery L, cursive;
+    color: black;
+}
+
+/*Рамка header*/
+header{
+    text-align: center;
+    position: static;
+    background-color: floralwhite;
+    border-width: 3.5px;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-top-style: solid; 
+    border-color: #ccbbab;
+    height: 80px;
+}
+/*Текст header*/
+header p{   
+    text-align: center;
+    font-size: 40px;
+    margin-top: 12px;
+}
+
+
+/*Рамка navigation bar*/
+.navigation_bar{
+    position: sticky;
+    top: 0;
+    list-style-type: none;
+    background-color: floralwhite;  
+    border: solid #ccbbab 3.5px;
+    margin-top: 0;
+    margin-bottom: 25px; 
+    padding: 0.5px;
+    height: 59.5px;
+}
+/*Расположение блоков с ссылкой*/
+.navigation_bar li{
+    float: left;
+}
+.navigation_bar li#profil{
+    float: right;
+}
+/*При нажатии на ссылку - изменение блока*/
+.navigation_bar li:hover{
+    background-color: rgb(252, 240, 216);
+}
+/*Блоки с ссылками-текстом*/
+.navigation_bar li a{
+    display: block;
+    font-size: 21px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding: 15px 15px;
+}
+/*Блок с ссылкой-картинкой профиля*/
+.navigation_bar li#profil a{
+    display: block;
+    font-size: 21px;
+    text-decoration: none;
+    text-align: center;
+    padding: 16px 15px 14px;
+    width: 28px;
+    height: 29.5px;
+}
+/*Сама картинка профиля*/
+.navigation_bar li#profil a img{
+    width: 30px;
+    height: 30px;
+}
+
+
+/*Кнопка "Dokumenty" и "Ostatní"*/
+.doc #documents, .other_inf #other{
+    background-color: transparent;
+    border: transparent;
+    font-family: URW Chancery L, cursive;
+    text-align: center;
+    font-size: 21px;
+    padding: 15px 15px;
+}
+/*Выпадающий список*/
+.doc_array, .array{
+    display: none;
+    position: absolute;
+    background-color: floralwhite;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+} 
+/*Текст выпадающего списка*/
+.doc_array a, .array a{
+    font-size: 18px !important;
+    font-family: URW Chancery L, cursive;
+    text-decoration: none;
+    display: block;
+}
+.doc_array a:hover, .array a:hover{
+    background-color: rgb(252, 240, 216);
+}
+.doc:hover .doc_array, .other_inf:hover .array{
+    display: block;
+}
+.doc:hover #documents, .other_inf:hover #other{
+    background-color: rgb(252, 240, 216);
+}
+
+
+
+/*Рамка social networks*/ 
+.social_networks{
+    position: fixed;
+    overflow: hidden;
+    list-style-type: none;
+    right: 170px;
+    top: 0; 
+    background-color: transparent;
+    margin-top: 1.5px;
+}
+/*Блок ссылки-картинки*/
+.social_networks li a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    padding: 0px;
+}
+/*Изображение ссылки-картинки*/
+.social_networks li a img{
+    width: 50px;
+    height: 50px;
+}
+
+
+/*Основной блок с информацией*/
+.main{
+    box-sizing: content-box;
+    overflow: hidden;
+    border: solid #ccbbab 3.5px;
+    background-color: rgb(255, 250, 240, 0.85);
+    padding: 30px 50px;
+    border-radius: 15px;
+}
+
+.profil #reg_signin{
+    text-align: center;
+    overflow: hidden;
+    list-style-type: none;
+    border-top: solid #ccbbab 3.5px;
+    border-bottom: solid #ccbbab 3.5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 270px !important;
+}
+.profil #reg_signin li{
+    float: left;
+}
+.profil #reg_signin li:hover{
+    background-color: rgb(252, 240, 216);
+}
+/*Блоки с ссылками*/
+.profil #reg_signin li a{
+    display: block;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding: 5px 20px 5px 20px;
+}
+
+/*Формуляр для заполнения при входе*/
+.profil #sign_in_form, #registration_form{
+    text-align: left;
+    overflow: hidden;
+    border: solid #ccbbab 3.5px;
+    width: 270px !important;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 18px;
+}
+/*Размер формы для заполнения*/
+input{
+    width: 200px;
+    margin-bottom: 10px;
+}
+#signin_button, #reg_button{
+    width: auto !important;
+    font-size: 13px;
+    text-align: center;
+    padding: 2px 5px;
+}
+img#profil_icon{
+    width: 80px;
+}
+#log_out_button{
+    width: 70px;
+    font-size: 13px;
+    padding: 2px 5px;
+}
