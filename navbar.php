@@ -34,9 +34,9 @@
 </ul>
 
 <!--Array of social networks-->
-<ul class = "social_networks">
-    <li><a href = "https://instagram.com/p.r.a.z.h.s.k.i.y.news?igshid=mkvnjm1b1519"><img alt = "insta_pic" src = "/blog/site_pictures/insta.png"></a></li>
-    <li><a href = "https://web.telegram.org/#/im?p=@prazhskiy_news"><img alt = "tg_pic" src = "/blog/site_pictures/tg.png"></a></li>
-    <li><a href = "" onclick = "changeStyle('dark')"><img alt = "dark back" src = "/blog/site_pictures/moon.png"></a></li>
-    <li><a href = "" onclick = "changeStyle('light')"><img alt = "light back" src = "/blog/site_pictures/sun.png"></a></li>
+<ul class="social_networks">
+    <li><a href="https://instagram.com/p.r.a.z.h.s.k.i.y.news?igshid=mkvnjm1b1519"><img alt="insta_pic" src="/blog/site_pictures/insta.png"></a></li>
+    <li><a href="https://web.telegram.org/#/im?p=@prazhskiy_news"><img alt="tg_pic" src="/blog/site_pictures/tg.png"></a></li>
+    <li><a href = "" onclick = "changeStyle()"><img alt="style_icon" id="imgChange" src = "/blog/site_pictures/moon.png"></a></li>
 </ul>
+<script src="/change.js"></script>

@@ -24,7 +24,7 @@
             </div>
         </div>
     </li>
-    <li id="profil"><a href="?id=profil"><img alt="profil_pic" src="/blog/site_pictures/profil.png"></a></li>
+    <li id="profil"><a href="/blog/profil/profil.php"><img alt="profil_pic" src="/blog/site_pictures/profil.png"></a></li>
 </ul>
 
 <!--Array of social networks-->

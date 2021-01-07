@@ -21,7 +21,7 @@
 
     <body>
         <!--Title and navigation bar-->
-        <?php include "./navbar_copy.php" ?>
+        <?php include "./navbar.php" ?>
 
         <!--Main block-->
         <div class="main">
@@ -49,14 +49,14 @@
                     case 'sites':
                         echo file_get_contents("blog/articles/other/sites_copy.html");
                         break;
-                    case 'profil':
-                        if (isset($_SESSION["status"])) {
-                            echo file_get_contents("blog/profil/profil.php");
-                            //header('Location: blog/profil/profil.php');
-                            //die();
-                        } else
-                            echo file_get_contents("blog/profil/registration.html");
-                        break;
+                    // case 'profil':
+                    //     if (isset($_SESSION["status"])) {
+                    //         echo file_get_contents("blog/profil/profil.php");
+                    //         //header('Location: blog/profil/profil.php');
+                    //         //die();
+                    //     } else
+                    //         echo file_get_contents("blog/profil/registration.html");
+                    //     break;
                     case 'reg':
                         echo file_get_contents("blog/profil/registration.html");
                         break;
