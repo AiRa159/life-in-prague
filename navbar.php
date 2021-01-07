@@ -40,4 +40,3 @@
     <li><a href="https://web.telegram.org/#/im?p=@prazhskiy_news"><img alt="tg_pic" src="/blog/site_pictures/tg.png"></a></li>
     <li><a href = "" onclick = "changeStyle()"><img alt="style_icon" id="imgChange" src = "/blog/site_pictures/moon.png"></a></li>
 </ul>
-<script src="/change.js"></script>

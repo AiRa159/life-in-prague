@@ -1,5 +1,4 @@
 <?php
-    // ini_set('session.gc_maxlifetime', 7200);
     session_start();
     if (isset($_POST['email'])) {
         $email = $_POST['email']; 

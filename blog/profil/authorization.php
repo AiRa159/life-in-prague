@@ -3,7 +3,6 @@
     <head>
         <title>Authorizace</title>
         <?php include "../../stylechanger.php"?>
-        <!-- <link rel="stylesheet" href="/blog/profil/auth.css"> -->
         <meta charset="utf-8">
     </head>
 
@@ -17,7 +16,7 @@
                 </ul>
 
                 <div id="sign_in_form">
-                    <form action="/authoriz.php" method="POST">
+                    <form name = "authorization" action="/authoriz.php" method="POST">
                         <label>E-mail:</label> <br>
                         <input type="email" name="email" placeholder="tvůj_email@gmail.com" required> <br>
 

@@ -3,7 +3,7 @@
     <head>
         <title>O Praze</title>
         <?php include "../../../stylechanger.php"?>
-        <link rel="stylesheet" href="/blog/articles/about_prague/prague.css">
+        <style> <?php include "./prague.css" ?> </style>
         <meta charset="utf-8">
     </head>
     <body>
@@ -13,6 +13,7 @@
             <p><img src = "/blog/articles/about_prague/prague_pic.jpg" alt = "Prague picture" class = "inf"> Praha je jedno z nejkrásnějších a nejromantičtějších měst na planetě. Hlavní město a hlavní ekonomické, politické a kulturní centrum ČR. Počet obyvatelů je 1,3 milionu. Praha je jedním z největších turistických center v Evropě. Historické centrum města je zapsáno na Seznamu světového dědictví UNESCO.</p>
             <p>Jazyk : čeština</p>
             <p>Valuta : česká koruna (Kč)</p>
+            <br>
             
             <p><img src = "/blog/articles/about_prague/staromak.jpg" alt = "Staroměstské náměstí" class = "pam"></p>   
             <h3>Památky:</h3>

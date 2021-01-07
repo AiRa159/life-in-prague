@@ -6,7 +6,7 @@
         <meta charset="utf-8">
     </head>
     <body>
-        <?php include "../../navbar.php"?>
+        <?php include "../../navbar.php" ?>
         <div class="main">
             <img id = "profil_icon" alt = "icon" src = "/blog/site_pictures/profil.png">
             <p>E-mail : <?php echo($_COOKIE["email"])?></p>

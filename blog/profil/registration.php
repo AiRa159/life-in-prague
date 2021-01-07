@@ -5,7 +5,7 @@
         <title>Registrace</title>
         <?php include "../../stylechanger.php"?>
         <meta charset="utf-8">
-        <script src = "/blog/profil/controlName.js"></script>
+        <script src = "/blog/profil/controlForm.js"></script>
     </head>
 
     <body>
@@ -14,7 +14,7 @@
             <div class="profil">
                 <ul id="reg_signin">
                     <li><a href="">Registrace</a></li>
-                    <li><a href="/blog/profil/authorization.php">Vstup</a></li>
+                    <li><a href = "/blog/profil/authorization.php">Vstup</a></li>
                 </ul>
 
                 <div id="registration_form">
@@ -23,7 +23,7 @@
                         <input type="email" name="email" placeholder="příklad@gmail.com" required><br>
 
                         <label>Jméno:</label> <br>
-                        <input type="text" name="username" placeholder="Eva" required> <br>
+                        <input type="text" name="username" placeholder="Eva" pattern = "^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$" required> <br>
 
                         <label>Heslo:</label> <br>
                         <input type="password" name="password" placeholder="8-12 symbolů" minlength="8" maxlength="12" required>
@@ -34,7 +34,6 @@
                 </div>
             </div>
         </div>
-        <!--pattern="^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$"-->
     </body>
 
 </html>

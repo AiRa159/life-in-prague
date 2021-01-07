@@ -3,7 +3,7 @@
     <head>
         <title>Koleje</title>
         <?php include "../../../stylechanger.php"?>
-        <link rel="stylesheet" href="/blog/articles/about_residence/res.css">    
+        <style> <?php include "./res.css" ?> </style>
         <meta charset="utf-8">
     </head>
     <body>

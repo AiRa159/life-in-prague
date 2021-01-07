@@ -5,7 +5,6 @@ window.onload = function() {
     } else if (style === "dark") {
         document.getElementById('imgChange').src="/blog/site_pictures/sun.png";
     }
-    // console.log(`cookies = ${document.cookie}`)
 }
 function changeStyle() {
     if (style === 'light') {

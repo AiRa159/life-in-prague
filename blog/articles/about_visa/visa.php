@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="cs">
     <head>
-        <?php include "../../../stylechanger.php"?>
         <title>Vízum</title>
-        <link rel = "stylesheet" href = "/blog/articles/about_visa/visa.css">
+        <?php include "../../../stylechanger.php"?>
+        <style> <?php include "./visa.css" ?> </style>
         <meta charset="utf-8">
     </head>
     <body>

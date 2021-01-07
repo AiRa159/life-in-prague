@@ -7,7 +7,7 @@ body {
     color: black;
 }
 
-/*Рамка header*/
+/*Box of header*/
 header{
     text-align: center;
     position: static;
@@ -19,7 +19,7 @@ header{
     border-color: #ccbbab;
     height: 80px;
 }
-/*Текст header*/
+/*Теxt of header*/
 header p{   
     text-align: center;
     font-size: 40px;
@@ -27,7 +27,7 @@ header p{
 }
 
 
-/*Рамка navigation bar*/
+/*Box of navigation bar*/
 .navigation_bar{
     position: sticky;
     top: 0;
@@ -39,18 +39,18 @@ header p{
     padding: 0.5px;
     height: 59.5px;
 }
-/*Расположение блоков с ссылкой*/
+/*Postion of blocks with links*/
 .navigation_bar li{
     float: left;
 }
 .navigation_bar li#profil{
     float: right;
 }
-/*При нажатии на ссылку - изменение блока*/
+/*Сhange when you press*/
 .navigation_bar li:hover{
     background-color: rgb(252, 240, 216);
 }
-/*Блоки с ссылками-текстом*/
+/*Blocks of links with text*/
 .navigation_bar li a{
     display: block;
     font-size: 21px;
@@ -59,7 +59,7 @@ header p{
     text-align: center;
     padding: 15px 15px;
 }
-/*Блок с ссылкой-картинкой профиля*/
+/*Block of link with profil pic*/
 .navigation_bar li#profil a{
     display: block;
     font-size: 21px;
@@ -69,14 +69,14 @@ header p{
     width: 28px;
     height: 29.5px;
 }
-/*Сама картинка профиля*/
+/*Picture of profil*/
 .navigation_bar li#profil a img{
     width: 30px;
     height: 30px;
 }
 
 
-/*Кнопка "Dokumenty" и "Ostatní"*/
+/*Buttons "Dokumenty" and "Ostatní"*/
 .doc #documents, .other_inf #other{
     background-color: transparent;
     border: transparent;
@@ -85,14 +85,14 @@ header p{
     font-size: 21px;
     padding: 15px 15px;
 }
-/*Выпадающий список*/
+/*Drop-down array*/
 .doc_array, .array{
     display: none;
     position: absolute;
     background-color: floralwhite;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 } 
-/*Текст выпадающего списка*/
+/*Теxt of array*/
 .doc_array a, .array a{
     font-size: 18px !important;
     font-family: URW Chancery L, cursive;
@@ -111,7 +111,7 @@ header p{
 
 
 
-/*Рамка social networks*/ 
+/*Box of social networks*/ 
 .social_networks{
     position: fixed;
     overflow: hidden;
@@ -121,7 +121,7 @@ header p{
     background-color: transparent;
     margin-top: 1.5px;
 }
-/*Блок ссылки-картинки*/
+/*Blocks*/
 .social_networks li a{
     display: block;
     text-decoration: none;
@@ -130,14 +130,14 @@ header p{
     height: 50px;
     padding: 0px;
 }
-/*Изображение ссылки-картинки*/
+/*Pictures*/
 .social_networks li a img{
     width: 50px;
     height: 50px;
 }
 
 
-/*Основной блок с информацией*/
+/*Main block*/
 .main{
     box-sizing: content-box;
     overflow: hidden;
@@ -147,6 +147,7 @@ header p{
     border-radius: 15px;
 }
 
+/*REG/SIGN_IN navigation block*/
 .profil #reg_signin{
     text-align: center;
     overflow: hidden;
@@ -163,7 +164,7 @@ header p{
 .profil #reg_signin li:hover{
     background-color: rgb(252, 240, 216);
 }
-/*Блоки с ссылками*/
+/*Blocks with links*/
 .profil #reg_signin li a{
     display: block;
     font-size: 20px;
@@ -173,7 +174,7 @@ header p{
     padding: 5px 20px 5px 20px;
 }
 
-/*Формуляр для заполнения при входе*/
+/*Forms*/
 .profil #sign_in_form, #registration_form{
     text-align: left;
     overflow: hidden;
@@ -183,7 +184,7 @@ header p{
     margin-right: auto;
     padding: 18px;
 }
-/*Размер формы для заполнения*/
+/*Size of inputs*/
 input{
     width: 200px;
     margin-bottom: 10px;

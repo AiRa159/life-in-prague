@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="cs">
     <head>
-        <?php include "../../../stylechanger.php"?>
         <title>Nostrifikace</title>
-        <link rel = "stylesheet" href = "/blog/articles/about_nostr/nostr.css">
+        <?php include "../../../stylechanger.php"?>
+        <style> <?php include "./nostr.css" ?> </style>
         <meta charset="utf-8">
     </head>
     <body>
@@ -11,7 +11,7 @@
 
         <div class="main">
             <p>Rok od roku se každý, kdo do České republiky dorazí, potýká s procesem, jako je nostrifikace. V tomto článku budeme podrobně rozebírat, co je nostrifikace a jak se provádí uznání dříve získaného středního vzdělání.</p>
-            <p><b>Nostrifikace</b> je postup pro uznání středoškolského atestátu nebo vysokoškolského diplomu rovnocenným vzděláním získaným v České republice. Nostrifikace je nutnou podmínkou pro přijetí na české vysoké školy.</p>  
+            <p><span>Nostrifikace</span> je postup pro uznání středoškolského atestátu nebo vysokoškolského diplomu rovnocenným vzděláním získaným v České republice. Nostrifikace je nutnou podmínkou pro přijetí na české vysoké školy.</p>  
             
             <h3>Jaké dokumenty jsou potřebné?</h3>
             <p>Chcete-li nostrifikovat školní atestaci o plném středoškolském vzdělání, musíte poskytnout následující balíček dokumentů:</p>

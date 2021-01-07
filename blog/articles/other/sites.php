@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="cs">
     <head>
-        <?php include "../../../stylechanger.php" ?>
         <title>Pro studenty</title>
-        <link rel = "stylesheet" href = "/blog/articles/other/sites.css">
+        <?php include "../../../stylechanger.php" ?>
+        <style> <?php include "./sites.css" ?> </style>
         <meta charset="utf-8">
     </head>
     <body>

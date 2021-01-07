@@ -1,5 +1,4 @@
 <?php
-    ini_set('session.gc_maxlifetime', 7200);
     session_start();
 
     //заносим введенный пользователем логин в переменную $login, если он пустой, то уничтожаем переменную
@@ -25,6 +24,8 @@
     //если логин и пароль введены, то обрабатываем их, чтобы теги и скрипты не работали, мало ли что люди могут ввести
     $email = stripslashes($email);
     $email = htmlspecialchars($email);
+    $username = stripslashes($username);
+    $username = htmlspecialchars($username);
     
     //удаляем лишние пробелы
     $email = trim($email);
