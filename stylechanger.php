@@ -9,9 +9,9 @@
     //         setcookie("style", "light")
     $path = '/light.css';
     if (!isset($_COOKIE["style"])) {
-        setcookie("style", "light", 0, "/");
+        setcookie('style', 'light', 0, '/');
     }
-    
+
     $cookieValue = $_COOKIE["style"] ?? "light";
     if ($cookieValue ?? "light") {
         if ($cookieValue == "light") {

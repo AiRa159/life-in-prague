@@ -1,5 +1,5 @@
 <?php
-    ini_set('session.gc_maxlifetime', 7200);
+    // ini_set('session.gc_maxlifetime', 7200);
     session_start();
     if (isset($_POST['email'])) {
         $email = $_POST['email']; 
@@ -23,7 +23,8 @@
                 $_SESSION["status"] = "ok";
                 setcookie("email", $email, time() + 7200);
                 setcookie("name", $user[1], time() + 7200);
-                header("Location: http://localhost/index.php?id=profil");
+                header("Location: http://localhost/blog/profil/profil.php");
+                die();
             }else
             exit ("Ne verno!");
     }else

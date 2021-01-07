@@ -25,6 +25,7 @@
         </div>
     </li>
     <?php 
+        session_start();
         if(isset($_SESSION["status"])){
             $path = "/blog/profil/profil.php";
         }else
