@@ -1,16 +1,7 @@
 <!DOCTYPE html>
 <html lang="cs">
     <head>
-        <style>
-            <?php
-                if($_COOKIE["style"] == "light"){
-                    include "../../../light.css";
-                }elseif($_COOKIE["style"] == "dark"){
-                    include "../../../dark.css";
-                }
-            ?>  
-        </style>
-        <script src="/change.js"></script>  
+        <?php include "../../../stylechanger.php" ?>
         <title>Pro studenty</title>
         <link rel = "stylesheet" href = "/blog/articles/other/sites.css">
         <meta charset="utf-8">
