@@ -15,3 +15,4 @@
     echo '<link rel="stylesheet" href=' . $path . '>';
 ?>
 <script src="/change.js"></script>
+<link rel="shortcut icon" href="/blog/site_pictures/icon.png" type="image/png">

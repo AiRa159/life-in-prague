@@ -26,7 +26,7 @@
                         <input type="text" name="username" placeholder="Eva" pattern = "^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$" required> <br>
 
                         <label>Heslo:</label> <br>
-                        <input type="password" name="password" placeholder="8-12 symbolů" minlength="8" maxlength="12" required>
+                        <input type="password" name="password" placeholder="8-12 symbolů" required>
                         <br>
 
                         <input type="submit" id="reg_button" value="Zaregistrovat se">

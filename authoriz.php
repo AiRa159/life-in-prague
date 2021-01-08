@@ -25,7 +25,7 @@
                 header("Location: http://localhost/blog/profil/profil.php");
                 die();
             }else
-            exit ("Ne verno!");
+            exit ("Není správný e-mail nebo heslo!");
     }else
-    exit ("Ty kto takoi?");
+    exit ("Takový uživatel neexistuje!?");
 ?>

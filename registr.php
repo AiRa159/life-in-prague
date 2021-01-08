@@ -1,7 +1,7 @@
 <?php
     session_start();
 
-    //заносим введенный пользователем логин в переменную $login, если он пустой, то уничтожаем переменную
+    //vložíme uživatelské přihlašovací e-mail a jméno do proměnných. Pokud jsou prázdné, zničíme proměnny
     if (isset($_POST['email'])) {
         $email = $_POST['email']; 
         if ($email == '') {
@@ -21,13 +21,11 @@
         } 
     }
 
-    //если логин и пароль введены, то обрабатываем их, чтобы теги и скрипты не работали, мало ли что люди могут ввести
+    //zpracování údajů
     $email = stripslashes($email);
     $email = htmlspecialchars($email);
-    $username = stripslashes($username);
-    $username = htmlspecialchars($username);
     
-    //удаляем лишние пробелы
+    //odstraňení zbytečných mezer
     $email = trim($email);
     $username = trim($username);
 
@@ -39,7 +37,7 @@
         fputcsv($fp, $user);
         $_SESSION["status"] = "ok";
         setcookie("email", $email, time() + 7200);
-        setcookie("name", $user[1], time() + 7200);
+        setcookie("name", $username, time() + 7200);
         header("Location: http://localhost/blog/profil/profil.php");
     }else
         exit ("Takový email už existuje.");

@@ -4,6 +4,7 @@
         <title>Authorizace</title>
         <?php include "../../stylechanger.php"?>
         <meta charset="utf-8">
+        <script src = "/blog/profil/controlForm.js"></script>
     </head>
 
     <body>
@@ -16,12 +17,12 @@
                 </ul>
 
                 <div id="sign_in_form">
-                    <form name = "authorization" action="/authoriz.php" method="POST">
+                    <form name = "authorization" action="/authoriz.php" method="POST" onsubmit="return control_pas()">
                         <label>E-mail:</label> <br>
                         <input type="email" name="email" placeholder="tvůj_email@gmail.com" required> <br>
 
                         <label>Heslo:</label> <br>
-                        <input type="password" name="password" placeholder="tvoje_heslo" minlength="8" maxlength="12" required>
+                        <input type="password" name="password" placeholder="tvoje_heslo" required>
                         <br>
 
                         <input type="submit" id="signin_button" value="Vstup">
