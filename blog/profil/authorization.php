@@ -18,13 +18,13 @@
 
                 <div id="sign_in_form">
                     <form name = "authorization" action="/authoriz.php" method="POST" onsubmit="return control_pas()">
-                        <label>E-mail:</label> <br>
+                        <label>E-mail: *</label> <br>
                         <input type="email" name="email" placeholder="tvůj_email@gmail.com" required> <br>
 
-                        <label>Heslo:</label> <br>
+                        <label>Heslo: *</label> <br>
                         <input type="password" name="password" placeholder="tvoje_heslo" required>
                         <br>
-
+                        
                         <input type="submit" id="signin_button" value="Vstup">
                     </form>
                 </div>

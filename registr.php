@@ -33,7 +33,7 @@
     $emails = array_column($users, 0);
     $fp = fopen('db.csv', 'a+');
     if(!in_array($email, $emails)){
-        $user = array("email" => $email,"username" => $username, "password" => password_hash($password.$username, PASSWORD_DEFAULT));
+        $user = array("email" => $email,"username" => $username, "password" => password_hash($password.$username, PASSWORD_DEFAULT), "role" => $user_text);
         fputcsv($fp, $user);
         $_SESSION["status"] = "ok";
         setcookie("email", $email, time() + 7200);
