@@ -25,7 +25,7 @@
                         <input type="password" name="password" placeholder="tvoje_heslo" required>
                         <br>
                         
-                        <input type="submit" id="signin_button" value="Vstup">
+                        <input type="submit" id="signin_button" value="Přihlášení">
                     </form>
                 </div>
             </div>
