@@ -13,7 +13,7 @@
             <div class="profil">
                 <ul id="reg_signin">
                     <li><a href="/blog/profil/registration.php">Registrace</a></li>
-                    <li><a href="">Vstup</a></li>
+                    <li><a href="">Přihlášení</a></li>
                 </ul>
 
                 <div id="sign_in_form">
