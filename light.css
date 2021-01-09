@@ -157,6 +157,8 @@ header p{
     margin-left: auto;
     margin-right: auto;
     width: 270px !important;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .profil #reg_signin li{
     float: left;
