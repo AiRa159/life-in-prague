@@ -21,6 +21,7 @@
             <div class = "array">
                 <a href = "/blog/articles/other/address.php">Adresy</a>
                 <a href = "/blog/articles/other/sites.php">Pro studenty</a>
+                <a href = "/blog/comments/comments.php">Komentáře</a>
             </div>
         </div>
     </li>

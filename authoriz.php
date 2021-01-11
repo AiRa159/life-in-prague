@@ -27,5 +27,5 @@
             }else
             exit ("Není správný e-mail nebo heslo!");
     }else
-    exit ("Takový uživatel neexistuje!?");
+    exit ("Takový uživatel neexistuje!");
 ?>

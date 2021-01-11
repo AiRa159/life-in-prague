@@ -191,7 +191,11 @@ input{
     width: 200px;
     margin-bottom: 10px;
 }
-#signin_button, #reg_button{
+#textarea{
+    width: 200px;
+    height: 100px;
+}
+#signin_button, #reg_button, #public{
     width: auto !important;
     font-size: 13px;
     text-align: center;

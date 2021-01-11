@@ -24,6 +24,8 @@
     //zpracování údajů
     $email = stripslashes($email);
     $email = htmlspecialchars($email);
+    $username = stripslashes($username);
+    $username = htmlspecialchars($username);
     
     //odstraňení zbytečných mezer
     $email = trim($email);
@@ -33,12 +35,18 @@
     $emails = array_column($users, 0);
     $fp = fopen('db.csv', 'a+');
     if(!in_array($email, $emails)){
-        $user = array("email" => $email,"username" => $username, "password" => password_hash($password.$username, PASSWORD_DEFAULT));
-        fputcsv($fp, $user);
-        $_SESSION["status"] = "ok";
-        setcookie("email", $email, time() + 7200);
-        setcookie("name", $username, time() + 7200);
-        header("Location: http://localhost/blog/profil/profil.php");
+        if(preg_match("/^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/", $username)){
+            if(strlen($password) >= 8 && strlen($password) <= 12){
+                $user = array("email" => $email,"username" => $username, "password" => password_hash($password.$username, PASSWORD_DEFAULT));
+                fputcsv($fp, $user);
+                $_SESSION["status"] = "ok";
+                setcookie("email", $email, time() + 7200);
+                setcookie("name", $username, time() + 7200);
+                header("Location: http://localhost/blog/profil/profil.php");
+            }else
+                exit ("Heslo musí být delší než 8 a kratší než 12!");
+        }else
+            exit ("Jméno musí obsahovat jen písmena!");
     }else
         exit ("Takový email už existuje.");
     fclose($fp);   

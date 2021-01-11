@@ -192,7 +192,12 @@ input{
     margin-bottom: 10px;
     background-color: #E4C7CB;
 }
-#signin_button, #reg_button{
+#textarea{
+    width: 200px;
+    height: 100px;
+    background-color: #E4C7CB;
+}
+#signin_button, #reg_button, #public{
     width: auto !important;
     font-size: 13px;
     text-align: center;

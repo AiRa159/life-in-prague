@@ -19,13 +19,13 @@
 
                 <div id="registration_form">
                     <form name="registration" action="/registr.php" method="POST" onsubmit="return control()">
-                        <label>E-mail: *</label> <br>
+                        <label for = "email">E-mail: *</label> <br>
                         <input type="email" name="email" placeholder="příklad@gmail.com" required><br>
 
-                        <label>Jméno: *</label> <br>
+                        <label for = "username">Jméno: *</label> <br>
                         <input type="text" name="username" placeholder="Eva" pattern = "^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$" required> <br>
 
-                        <label>Heslo: *</label> <br>
+                        <label for = "passwords">Heslo: *</label> <br>
                         <input type="password" name="password" placeholder="8-12 symbolů" required>
                         <br>
 
