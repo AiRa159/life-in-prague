@@ -10,11 +10,11 @@
         <?php include "../../navbar.php"?>
 
         <div class = "main">
-            <?php include ("dbOfComments.txt")?>
-
             <?php 
                 if(isset($_SESSION["status"])){
             ?>
+            <?php include ("dbOfComments.txt")?>
+
             <form action="/blog/comments/addComment.php" method = "post">
                 <label for="title">Název: *</label><br>
                 <input type="text" name="title" required><br>
@@ -28,7 +28,7 @@
             <?php 
                 }else{
             ?>
-            <p>Pokud chcete psát komentáře, musíte být přihlášeny!</p>
+            <p>Pokud chcete psát a vidět komentáře, musíte být přihlášeny!</p>
             <p>Přihlásit se mužete <a href = "/blog/profil/authorization.php">zde</a></p>
             <?php
                 }
