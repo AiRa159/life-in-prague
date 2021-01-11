@@ -1,7 +1,7 @@
 <?php
     session_start();
 
-    //vložíme uživatelské přihlašovací e-mail a jméno do proměnných. Pokud jsou prázdné, zničíme proměnny
+    //We insert the user's login email and name into the variables. If they are empty, we destroy the variables
     if (isset($_POST['email'])) {
         $email = $_POST['email']; 
         if ($email == '') {
@@ -21,27 +21,31 @@
         } 
     }
 
-    //zpracování údajů
+    //data processing
     $email = stripslashes($email);
     $email = htmlspecialchars($email);
     $username = stripslashes($username);
     $username = htmlspecialchars($username);
     
-    //odstraňení zbytečných mezer
+    //removing unnecessary gaps
     $email = trim($email);
     $username = trim($username);
 
     $users = array_map('str_getcsv', file('db.csv'));
     $emails = array_column($users, 0);
     $fp = fopen('db.csv', 'a+');
+    // checking for a match
     if(!in_array($email, $emails)){
+        // checking the correctness of entering the username
         if(preg_match("/^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/", $username)){
+            // checking the correctness of entering the password
             if(strlen($password) >= 8 && strlen($password) <= 12){
                 $user = array("email" => $email,"username" => $username, "password" => password_hash($password.$username, PASSWORD_DEFAULT));
                 fputcsv($fp, $user);
                 $_SESSION["status"] = "ok";
                 setcookie("email", $email, time() + 7200);
                 setcookie("name", $username, time() + 7200);
+                // Redirect to authorization page
                 header("Location: http://localhost/blog/profil/profil.php");
             }else
                 exit ("Heslo musí být delší než 8 a kratší než 12!");

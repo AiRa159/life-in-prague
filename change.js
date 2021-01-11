@@ -1,3 +1,4 @@
+// The process of changing the background and icon
 var style = document.cookie.split('; ').find(row => row.startsWith('style')).split('=')[1];
 window.onload = function() {
     if (style === 'light') {

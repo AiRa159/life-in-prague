@@ -10,11 +10,14 @@
         <?php include "../../navbar.php"?>
 
         <div class = "main">
+            <!-- Condition under which the features of this page will be available -->
             <?php 
                 if(isset($_SESSION["status"])){
             ?>
+            <!-- Output of commentы from the database -->
             <?php include ("dbOfComments.txt")?>
 
+            <!-- Form for writing comments -->
             <form action="/blog/comments/addComment.php" method = "post">
                 <label for="title">Název: *</label><br>
                 <input type="text" name="title" required><br>

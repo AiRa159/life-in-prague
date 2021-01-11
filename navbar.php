@@ -1,7 +1,9 @@
+<!-- The title of the site -->
 <header>
     <p>Život v Praze</p>
 </header> 
 
+<!-- Navigation bar -->
 <ul class = "navigation_bar">
     <li><a href = "/blog/articles/about_prague/prague.php" >O Praze</a></li>
     <li><a href = "/blog/articles/about_university/university.php" >Univerzity</a></li>
@@ -25,6 +27,7 @@
             </div>
         </div>
     </li>
+    <!-- Switching to the desired page depending on the user's status -->
     <?php 
         session_start();
         if(isset($_SESSION["status"])){

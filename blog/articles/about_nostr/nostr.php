@@ -2,11 +2,13 @@
 <html lang="cs">
     <head>
         <title>Nostrifikace</title>
+        <!-- Import of main css -->
         <?php include "../../../stylechanger.php"?>
         <style> <?php include "./nostr.css" ?> </style>
         <meta charset="utf-8">
     </head>
     <body>
+        <!-- Import of navigation bar -->
         <?php include "../../../navbar.php"?>
 
         <div class="main">

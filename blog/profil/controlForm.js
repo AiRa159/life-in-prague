@@ -1,3 +1,4 @@
+// In this file, passwords are checked during registration and authorization
 function control() {
     var password = String(document.forms["registration"]["password"].value);
     if(password.length < 8 || password.length > 12){

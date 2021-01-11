@@ -1,4 +1,5 @@
 <?php
+// This file processes comments entered by the user and added to the database
     if(isset($_POST['title'])) {
         $title = $_POST['title']; 
         if ($title == '') {

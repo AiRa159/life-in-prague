@@ -7,6 +7,7 @@
     </head>
     <body>
         <?php include "../../navbar.php" ?>
+        <!-- Profil of user -->
         <div class="main">
             <img id = "profil_icon" alt = "icon" src = "/blog/site_pictures/profil.png">
             <p>E-mail : <?php echo($_COOKIE["email"])?></p>
