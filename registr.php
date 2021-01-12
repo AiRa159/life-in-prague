@@ -46,7 +46,7 @@
                 setcookie("email", $email, time() + 7200);
                 setcookie("name", $username, time() + 7200);
                 // Redirect to authorization page
-                header("Location: http://localhost/blog/profil/profil.php");
+                header("Location: blog/profil/profil.php");
             }else
                 exit ("Heslo musí být delší než 8 a kratší než 12!");
         }else
