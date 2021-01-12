@@ -15,6 +15,6 @@
     
     $com = '<p><span>'.$_COOKIE['name'].'</span>: '.$title.'</p>'.'<p>'.$comment.'</p><br>';
     file_put_contents("dbOfComments.txt", $com."\n", FILE_APPEND);
-    header("Location: http://localhost/blog/comments/comments.php");
+    header("Location: blog/comments/comments.php");
     exit();
 ?>
