@@ -5,5 +5,5 @@
     setcookie("email", "", time() - 7200);
     setcookie("name", "", time() - 7200);
     // Redirect to authorization page
-    header("Location: blog/profil/authorization.php");
+    header("Location: http://localhost/blog/profil/authorization.php");
 ?>

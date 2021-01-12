@@ -29,7 +29,7 @@
                 setcookie("email", $email, time() + 7200);
                 setcookie("name", $user[1], time() + 7200);
                 // Redirect to profil page
-                header("Location: blog/profil/profil.php");
+                header("Location: http://localhost/blog/profil/profil.php");
                 die();
             }else
                 exit ("Není správný e-mail nebo heslo!");

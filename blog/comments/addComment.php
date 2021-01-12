@@ -12,7 +12,16 @@
             unset($comment);
         } 
     }
+    //data processing
+    $title = stripslashes($title);
+    $title = htmlspecialchars($title);
+    $comment = stripslashes($comment);
+    $comment = htmlspecialchars($comment);
     
+    //removing unnecessary gaps
+    $title = trim($title);
+    $comment = trim($comment);
+
     $com = '<p><span>'.$_COOKIE['name'].'</span>: '.$title.'</p>'.'<p>'.$comment.'</p><br>';
     file_put_contents("dbOfComments.txt", $com."\n", FILE_APPEND);
     header("Location: blog/comments/comments.php");
